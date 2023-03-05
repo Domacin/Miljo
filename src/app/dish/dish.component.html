@@ -1,0 +1,34 @@
+<div>
+  <form
+    ngNativeValidate
+    [formGroup]="addDishForm"
+    (ngSubmit)="addDishToDataBase()"
+  >
+    <div class="center">
+      <input
+        type="text"
+        formControlName="dishName"
+        placeholder="Dish name"
+        required
+      />
+    </div>
+    <div class="center">
+      <input
+        type="number"
+        formControlName="dishPrice"
+        placeholder="Dish price"
+        required
+      />
+    </div>
+    <div class="center">
+      <input
+        type="text"
+        placeholder="Link to picture of Dish"
+        formControlName="dishPicture"
+      />
+    </div>
+    <div class="center">
+      <button mat-raised-button type="submit">Add Dish</button>
+    </div>
+  </form>
+</div>

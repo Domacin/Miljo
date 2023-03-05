@@ -1,0 +1,71 @@
+<div class="main">
+  <div class="form">
+    <form ngNativeValidate [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="center">
+        <input
+          type="text"
+          formControlName="firstName"
+          placeholder="First name"
+          required
+        />
+      </div>
+
+      <div class="center">
+        <input
+          type="text"
+          formControlName="lastName"
+          placeholder="Last name"
+          required
+        />
+      </div>
+
+      <div class="center">
+        <input
+          type="text"
+          formControlName="username"
+          placeholder="Username"
+          required
+        />
+      </div>
+
+      <div class="center">
+        <input
+          matinput
+          type="password"
+          formControlName="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+      <div class="center">
+        <input
+          type="text"
+          formControlName="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div class="center">
+        <input
+          type="text"
+          formControlName="adress"
+          placeholder="Address"
+          required
+        />
+      </div>
+      <div class="center">
+        <button mat-raised-button type="submit">Sign up</button>
+      </div>
+    </form>
+  </div>
+  <div class="image">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/53b839afe4b07ea978436183/1daa9086-0f1d-4d65-86b5-4a15a36d08d4/traditional-food-around-the-world-Travlinmad.jpg?format=1500w"
+    />
+    <div>
+      <p><a routerLink="/login">Already a member?</a></p>
+    </div>
+  </div>
+</div>
